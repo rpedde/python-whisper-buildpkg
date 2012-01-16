@@ -1,0 +1,18 @@
+python-whisper (0.9.9-1) unstable; urgency=low
+
+  * Bump to 0.9.9
+
+ -- Ron Pedde <ron@pedde.com>  Mon, 16 Jan 2012 19:15:27 +0000
+
+python-whisper (0.9.8-1) unstable; urgency=low
+
+  * New upstream version.
+  * Bump Standards-Version.
+
+ -- Elliot Murphy <elliot@ubuntu.com>  Wed, 27 Apr 2011 09:39:51 -0400
+
+python-whisper (0.9.6-1) unstable; urgency=low
+
+  * Initial release (Closes: #563765)
+
+ -- Elliot Murphy <elliot@ubuntu.com>  Mon, 07 Jun 2010 16:40:44 -0500

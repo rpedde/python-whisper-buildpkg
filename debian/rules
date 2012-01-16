@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_install:
+	[ -f debian/python-whisper/usr/bin/rrd2whisper ] || mv debian/python-whisper/usr/bin/rrd2whisper.py debian/python-whisper/usr/bin/rrd2whisper
+	[ -f debian/python-whisper/usr/bin/whisper-create ] || mv debian/python-whisper/usr/bin/whisper-create.py debian/python-whisper/usr/bin/whisper-create
+	[ -f debian/python-whisper/usr/bin/whisper-fetch ] || mv debian/python-whisper/usr/bin/whisper-fetch.py debian/python-whisper/usr/bin/whisper-fetch
+	[ -f debian/python-whisper/usr/bin/whisper-info ] || mv debian/python-whisper/usr/bin/whisper-info.py debian/python-whisper/usr/bin/whisper-info
+	[ -f debian/python-whisper/usr/bin/whisper-resize ] || mv debian/python-whisper/usr/bin/whisper-resize.py debian/python-whisper/usr/bin/whisper-resize
+	[ -f debian/python-whisper/usr/bin/whisper-update ] || mv debian/python-whisper/usr/bin/whisper-update.py debian/python-whisper/usr/bin/whisper-update
+	dh_install
